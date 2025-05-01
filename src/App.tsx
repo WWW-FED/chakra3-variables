@@ -1,6 +1,5 @@
 import {
   Box,
-  Button,
   Checkbox,
   ClientOnly,
   HStack,
@@ -11,6 +10,7 @@ import {
   VStack,
 } from "@chakra-ui/react"
 import { ColorModeToggle } from "./components/color-mode-toggle"
+import { Button } from "./components/ui/button"
 
 export default function Page() {
   return (
