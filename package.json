@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "script:tokens:rest": "cd scripts/tokens; node --env-file=../../.env app.mjs; cd -;"
   },
   "dependencies": {
     "@chakra-ui/react": "^3.16.1",
