@@ -10,7 +10,7 @@ const config = defineConfig({
   theme: {
     tokens: {
       colors: {
-        white: { value: "red" }
+        white: { value: "--kx-typography-colors-button-primary-bgcolor" }
       },
     },
   },
