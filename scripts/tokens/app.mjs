@@ -13,66 +13,34 @@ const CONVERT_TO_REM = true;
 // Extension namespace for the w3c token file
 const NAMESPACE = "com.figma.sds";
 // Prefix for CSS custom properties
-const TOKEN_PREFIX = "sds-";
+const TOKEN_PREFIX = "kx-";
 
 // The data object. Each item in here represents a collection.
 // `[collection].definitions` will contain all the token data
 // You should ensure these names match those in your Figma variables data.
 // Collection names are lowercased and underscored and stripped of non alphanumeric characters.
 const COLLECTION_DATA = {
-  color_primitives: {
-    settings: { prefix: "color" },
-  },
-  color: {
+  buttonbase: {
     settings: {
-      prefix: "color",
-      // Light mode names from Figma in lower underscore case. First is default light mode.
-      colorSchemes: ["sds_light"],
-      // Dark mode names from Figma in lower underscore case. First is default dark mode.
-      colorSchemesDark: ["sds_dark"],
-      // Strings to strip from mode names above when transforming to theme class names. (Only applicable when more than one per mode)
-      colorSchemeLightRemove: "_light",
-      colorSchemeDarkRemove: "_dark",
-      // Strings to find and replace in CSS values
-      replacements: {
-        color_primitives: "color",
-      },
+      prefix: "button_base",
+      colorSchemes: ["agnostic", "sweaty_betty"],
     },
   },
-  size: {
+  agnostic_brand_style_guide: {
     settings: {
-      prefix: "size",
-      convertPixelToRem: true,
-      replacements: {
-        [`${KEY_PREFIX_COLLECTION}responsive`]: "responsive",
-      },
+      prefix: "agnostic_brand_style_guide",
+      colorSchemes: ["agnostic"],
     },
   },
-  typography_primitives: {
+  sb_style_guide: {
     settings: {
       prefix: "typography",
-      convertPixelToRem: true,
-      replacements: {
-        [`${KEY_PREFIX_COLLECTION}responsive`]: "responsive",
-        "Extra Bold Italic": "800 italic",
-        "Semi Bold Italic": "600 italic",
-        "Medium Italic": "500 italic",
-        "Regular Italic": "400 italic",
-        "Extra Light Italic": "200 italic",
-        "Light Italic": "300 italic",
-        "Black Italic": "900 italic",
-        "Bold Italic": "700 italic",
-        "Thin Italic": "100 italic",
-      },
     },
   },
-  typography: {
+  sizes: {
     settings: {
-      prefix: "typography",
+      prefix: "sizes",
       convertPixelToRem: true,
-      replacements: {
-        typography_primitives: "typography",
-      },
     },
   },
 };
@@ -94,7 +62,7 @@ async function initialize() {
     JSON.parse(fs.readFileSync("./tokens.json")),
   );
   // An object to lookup variables in when processing styles.
-  console.log(processed.color.definitions.sds_light);
+  // console.log(processed.color.definitions.sds_light);
   const variableLookups = Object.keys(processed)
     .flatMap((key) => Object.values(processed[key].definitions)[0])
     .reduce((into, item) => {
