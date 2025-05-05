@@ -1,0 +1,442 @@
+{
+  "@button": {
+    "$extensions": {
+      "com.figma.sds": {
+        "figmaId": "VariableCollectionId:1:45",
+        "modes": [
+          "agnostic",
+          "sweaty_betty"
+        ]
+      }
+    },
+    "base": {
+      "borderstyle": {
+        "width": {
+          "$type": "number",
+          "$value": "{@agnostic_brand_style_guide.borderWidth}",
+          "$description": "",
+          "$extensions": {
+            "com.figma.sds": {
+              "figmaId": "VariableID:2:49",
+              "modes": {
+                "agnostic": "{@agnostic_brand_style_guide.borderWidth}",
+                "sweaty_betty": "{@sb_style_guide.borderWidth}"
+              }
+            }
+          }
+        },
+        "radius": {
+          "$type": "number",
+          "$value": "{@sizes.radii.none}",
+          "$description": "",
+          "$extensions": {
+            "com.figma.sds": {
+              "figmaId": "VariableID:2:54",
+              "modes": {
+                "agnostic": "{@sizes.radii.none}",
+                "sweaty_betty": "{@sizes.radii.none}"
+              }
+            }
+          }
+        },
+        "bordercolor": {
+          "$type": "color",
+          "$value": "{@button.base.color.bgColor}",
+          "$description": "",
+          "$extensions": {
+            "com.figma.sds": {
+              "figmaId": "VariableID:2:164",
+              "modes": {
+                "agnostic": "{@button.base.color.bgColor}",
+                "sweaty_betty": "{@sb_style_guide.colors.button-primary.bgColor}"
+              }
+            }
+          }
+        },
+        "bordercolor-hover": {
+          "$type": "color",
+          "$value": "{@agnostic_brand_style_guide.colors.Blue900}",
+          "$description": "",
+          "$extensions": {
+            "com.figma.sds": {
+              "figmaId": "VariableID:2:163",
+              "modes": {
+                "agnostic": "{@agnostic_brand_style_guide.colors.Blue900}",
+                "sweaty_betty": "{@sb_style_guide.colors.button-primary.bgColor-hover}"
+              }
+            }
+          }
+        },
+        "bordercolor-active": {
+          "$type": "color",
+          "$value": "{@agnostic_brand_style_guide.colors.Blue500}",
+          "$description": "",
+          "$extensions": {
+            "com.figma.sds": {
+              "figmaId": "VariableID:2:162",
+              "modes": {
+                "agnostic": "{@agnostic_brand_style_guide.colors.Blue500}",
+                "sweaty_betty": "{@sb_style_guide.colors.button-primary.bgColor-active}"
+              }
+            }
+          }
+        },
+        "bordercolor-disabled": {
+          "$type": "color",
+          "$value": "{@agnostic_brand_style_guide.colors.Slate900}",
+          "$description": "",
+          "$extensions": {
+            "com.figma.sds": {
+              "figmaId": "VariableID:2:159",
+              "modes": {
+                "agnostic": "{@agnostic_brand_style_guide.colors.Slate900}",
+                "sweaty_betty": "{@sb_style_guide.colors.Color1-700}"
+              }
+            }
+          }
+        },
+        "bordercolor-focused": {
+          "$type": "color",
+          "$value": "{@agnostic_brand_style_guide.colors.Blue700}",
+          "$description": "",
+          "$extensions": {
+            "com.figma.sds": {
+              "figmaId": "VariableID:2:161",
+              "modes": {
+                "agnostic": "{@agnostic_brand_style_guide.colors.Blue700}",
+                "sweaty_betty": "{@sb_style_guide.colors.button-primary.bgColor-focused}"
+              }
+            }
+          }
+        },
+        "bordercolor-visited": {
+          "$type": "color",
+          "$value": "{@agnostic_brand_style_guide.colors.Blue700}",
+          "$description": "",
+          "$extensions": {
+            "com.figma.sds": {
+              "figmaId": "VariableID:2:160",
+              "modes": {
+                "agnostic": "{@agnostic_brand_style_guide.colors.Blue700}",
+                "sweaty_betty": "{@sb_style_guide.colors.button-primary.bgColor-visited}"
+              }
+            }
+          }
+        }
+      },
+      "padding": {
+        "top": {
+          "$type": "number",
+          "$value": "{@sizes.spacing.3}",
+          "$description": "",
+          "$extensions": {
+            "com.figma.sds": {
+              "figmaId": "VariableID:2:55",
+              "modes": {
+                "agnostic": "{@sizes.spacing.3}",
+                "sweaty_betty": "{@sizes.spacing.3}"
+              }
+            }
+          }
+        },
+        "left": {
+          "$type": "number",
+          "$value": "{@sizes.spacing.4}",
+          "$description": "",
+          "$extensions": {
+            "com.figma.sds": {
+              "figmaId": "VariableID:2:56",
+              "modes": {
+                "agnostic": "{@sizes.spacing.4}",
+                "sweaty_betty": "{@sizes.spacing.4}"
+              }
+            }
+          }
+        },
+        "bottom": {
+          "$type": "number",
+          "$value": "{@sizes.spacing.3}",
+          "$description": "",
+          "$extensions": {
+            "com.figma.sds": {
+              "figmaId": "VariableID:2:57",
+              "modes": {
+                "agnostic": "{@sizes.spacing.3}",
+                "sweaty_betty": "{@sizes.spacing.3}"
+              }
+            }
+          }
+        },
+        "right": {
+          "$type": "number",
+          "$value": "{@sizes.spacing.4}",
+          "$description": "",
+          "$extensions": {
+            "com.figma.sds": {
+              "figmaId": "VariableID:2:58",
+              "modes": {
+                "agnostic": "{@sizes.spacing.4}",
+                "sweaty_betty": "{@sizes.spacing.4}"
+              }
+            }
+          }
+        }
+      },
+      "fonts": {
+        "weight": {
+          "$type": "unknown",
+          "$value": "{@agnostic_brand_style_guide.fonts.semi bold}",
+          "$description": "",
+          "$extensions": {
+            "com.figma.sds": {
+              "figmaId": "VariableID:1:47",
+              "modes": {
+                "agnostic": "{@agnostic_brand_style_guide.fonts.semi bold}",
+                "sweaty_betty": "{@sb_style_guide.fonts.medium}"
+              }
+            }
+          }
+        },
+        "size-lg": {
+          "$type": "number",
+          "$value": "{@agnostic_brand_style_guide.fonts.text-lg}",
+          "$description": "",
+          "$extensions": {
+            "com.figma.sds": {
+              "figmaId": "VariableID:1:48",
+              "modes": {
+                "agnostic": "{@agnostic_brand_style_guide.fonts.text-lg}",
+                "sweaty_betty": "{@sb_style_guide.fonts.text-lg}"
+              }
+            }
+          }
+        },
+        "size-md": {
+          "$type": "number",
+          "$value": "{@agnostic_brand_style_guide.fonts.text-med}",
+          "$description": "",
+          "$extensions": {
+            "com.figma.sds": {
+              "figmaId": "VariableID:2:32",
+              "modes": {
+                "agnostic": "{@agnostic_brand_style_guide.fonts.text-med}",
+                "sweaty_betty": "{@sb_style_guide.fonts.text-med}"
+              }
+            }
+          }
+        },
+        "size-sm": {
+          "$type": "number",
+          "$value": "{@agnostic_brand_style_guide.fonts.text-sm}",
+          "$description": "",
+          "$extensions": {
+            "com.figma.sds": {
+              "figmaId": "VariableID:2:33",
+              "modes": {
+                "agnostic": "{@agnostic_brand_style_guide.fonts.text-sm}",
+                "sweaty_betty": "{@sb_style_guide.fonts.text-sm}"
+              }
+            }
+          }
+        },
+        "letterspacing": {
+          "$type": "number",
+          "$value": "{@sizes.spacing.0}",
+          "$description": "",
+          "$extensions": {
+            "com.figma.sds": {
+              "figmaId": "VariableID:2:59",
+              "modes": {
+                "agnostic": "{@sizes.spacing.0}",
+                "sweaty_betty": "{@sizes.spacing.0}"
+              }
+            }
+          }
+        },
+        "label": {
+          "$type": "unknown",
+          "$value": "{@agnostic_brand_style_guide.fonts.font}",
+          "$description": "",
+          "$extensions": {
+            "com.figma.sds": {
+              "figmaId": "VariableID:1:46",
+              "modes": {
+                "agnostic": "{@agnostic_brand_style_guide.fonts.font}",
+                "sweaty_betty": "{@sb_style_guide.fonts.font}"
+              }
+            }
+          }
+        },
+        "color": {
+          "$type": "color",
+          "$value": "{@sb_style_guide.colors.White}",
+          "$description": "",
+          "$extensions": {
+            "com.figma.sds": {
+              "figmaId": "VariableID:2:143",
+              "modes": {
+                "agnostic": "{@sb_style_guide.colors.White}",
+                "sweaty_betty": "{@agnostic_brand_style_guide.colors.White}"
+              }
+            }
+          }
+        },
+        "colordisabled": {
+          "$type": "color",
+          "$value": "{@agnostic_brand_style_guide.colors.Slate900}",
+          "$description": "",
+          "$extensions": {
+            "com.figma.sds": {
+              "figmaId": "VariableID:48:4",
+              "modes": {
+                "agnostic": "{@agnostic_brand_style_guide.colors.Slate900}",
+                "sweaty_betty": "{@sb_style_guide.colors.Color1-900}"
+              }
+            }
+          }
+        },
+        "coloractive": {
+          "$type": "color",
+          "$value": "{@agnostic_brand_style_guide.colors.White}",
+          "$description": "",
+          "$extensions": {
+            "com.figma.sds": {
+              "figmaId": "VariableID:48:50",
+              "modes": {
+                "agnostic": "{@agnostic_brand_style_guide.colors.White}",
+                "sweaty_betty": "{@sb_style_guide.colors.Color1-900}"
+              }
+            }
+          }
+        }
+      },
+      "color": {
+        "bgcolor": {
+          "$type": "color",
+          "$value": "{@agnostic_brand_style_guide.colors.Blue700}",
+          "$description": "",
+          "$extensions": {
+            "com.figma.sds": {
+              "figmaId": "VariableID:2:140",
+              "modes": {
+                "agnostic": "{@agnostic_brand_style_guide.colors.Blue700}",
+                "sweaty_betty": "{@sb_style_guide.colors.button-primary.bgColor}"
+              }
+            }
+          }
+        },
+        "bgcolor-hover": {
+          "$type": "color",
+          "$value": "{@agnostic_brand_style_guide.colors.Blue900}",
+          "$description": "",
+          "$extensions": {
+            "com.figma.sds": {
+              "figmaId": "VariableID:2:142",
+              "modes": {
+                "agnostic": "{@agnostic_brand_style_guide.colors.Blue900}",
+                "sweaty_betty": "{@sb_style_guide.colors.button-primary.bgColor-hover}"
+              }
+            }
+          }
+        },
+        "bgcolor-active": {
+          "$type": "color",
+          "$value": "{@agnostic_brand_style_guide.colors.Blue500}",
+          "$description": "",
+          "$extensions": {
+            "com.figma.sds": {
+              "figmaId": "VariableID:2:141",
+              "modes": {
+                "agnostic": "{@agnostic_brand_style_guide.colors.Blue500}",
+                "sweaty_betty": "{@sb_style_guide.colors.button-primary.bgColor-active}"
+              }
+            }
+          }
+        },
+        "bgcolor-disabled": {
+          "$type": "color",
+          "$value": "{@agnostic_brand_style_guide.colors.Slate100}",
+          "$description": "",
+          "$extensions": {
+            "com.figma.sds": {
+              "figmaId": "VariableID:2:139",
+              "modes": {
+                "agnostic": "{@agnostic_brand_style_guide.colors.Slate100}",
+                "sweaty_betty": "{@sb_style_guide.colors.Color1-100}"
+              }
+            }
+          }
+        },
+        "bgcolor-focused": {
+          "$type": "color",
+          "$value": "{@agnostic_brand_style_guide.colors.Blue700}",
+          "$description": "",
+          "$extensions": {
+            "com.figma.sds": {
+              "figmaId": "VariableID:2:138",
+              "modes": {
+                "agnostic": "{@agnostic_brand_style_guide.colors.Blue700}",
+                "sweaty_betty": "{@sb_style_guide.colors.button-primary.bgColor-focused}"
+              }
+            }
+          }
+        },
+        "bgcolor-visited": {
+          "$type": "color",
+          "$value": "{@agnostic_brand_style_guide.colors.Blue700}",
+          "$description": "",
+          "$extensions": {
+            "com.figma.sds": {
+              "figmaId": "VariableID:2:137",
+              "modes": {
+                "agnostic": "{@agnostic_brand_style_guide.colors.Blue700}",
+                "sweaty_betty": "{@sb_style_guide.colors.button-primary.bgColor-visited}"
+              }
+            }
+          }
+        },
+        "$type": "color",
+        "$value": "#ffffff",
+        "$description": "",
+        "$extensions": {
+          "com.figma.sds": {
+            "figmaId": "VariableID:48:58",
+            "modes": {
+              "agnostic": "#ffffff",
+              "sweaty_betty": "#ffffff"
+            }
+          }
+        }
+      },
+      "radii": {
+        "radii": {
+          "$type": "number",
+          "$value": "{@agnostic_brand_style_guide.radii.radius-sm}",
+          "$description": "",
+          "$extensions": {
+            "com.figma.sds": {
+              "figmaId": "VariableID:10:61",
+              "modes": {
+                "agnostic": "{@agnostic_brand_style_guide.radii.radius-sm}",
+                "sweaty_betty": "{@sizes.radii.none}"
+              }
+            }
+          }
+        },
+        "radius-1": {
+          "$type": "number",
+          "$value": "UNKNOWN",
+          "$description": "",
+          "$extensions": {
+            "com.figma.sds": {
+              "figmaId": "VariableID:10:62",
+              "modes": {
+                "agnostic": "UNKNOWN",
+                "sweaty_betty": "{@sizes.radii.none}"
+              }
+            }
+          }
+        }
+      }
+    }
+  }

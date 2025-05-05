@@ -10,7 +10,20 @@ const config = defineConfig({
   theme: {
     tokens: {
       colors: {
-        white: { value: "--kx-typography-colors-button-primary-bgcolor" }
+        white: { value: "purple" },
+        black: { value: "--kx-typography-colors-button-primary-color" }
+      },
+    },
+    semanticTokens: {
+      colors: {
+        "button-primary-bgcolor": {
+          value: { base: "white", _dark: "black" },
+          description: "The background color of the primary button",
+        },
+        "button-primary-color": {
+          value: { base: "black", _dark: "white" },
+          description: "The text color of the primary button",
+        },
       },
     },
   },
