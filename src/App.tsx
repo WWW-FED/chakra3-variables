@@ -16,9 +16,9 @@ export default function Page() {
   return (
     <Box textAlign="center" fontSize="xl" pt="30vh">
       <VStack gap="8">
-        <img alt="chakra logo" src="/static/logo.svg" width="80" height="80" />
+        <img alt="chakra logo" src="/static/sb-logo.svg" width="80" height="80" />
         <Heading size="2xl" letterSpacing="tight">
-          Welcome to Chakra UI v3 + Vite
+          KX Design System - Demo
         </Heading>
 
         <HStack gap="10">

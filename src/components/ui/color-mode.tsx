@@ -15,7 +15,7 @@ export function ColorModeProvider(props: ColorModeProviderProps) {
   )
 }
 
-export type ColorMode = "light" | "dark"
+export type ColorMode = "agnostic" | "sweatybetty"
 
 export interface UseColorModeReturn {
   colorMode: ColorMode
@@ -26,7 +26,7 @@ export interface UseColorModeReturn {
 export function useColorMode(): UseColorModeReturn {
   const { resolvedTheme, setTheme } = useTheme()
   const toggleColorMode = () => {
-    setTheme(resolvedTheme === "dark" ? "light" : "dark")
+    setTheme(resolvedTheme === "sweatybetty" ? "agnostic" : "sweatybetty")
   }
   return {
     colorMode: resolvedTheme as ColorMode,
@@ -35,14 +35,14 @@ export function useColorMode(): UseColorModeReturn {
   }
 }
 
-export function useColorModeValue<T>(light: T, dark: T) {
+export function useColorModeValue<T>(agnostic: T, sweatybetty: T) {
   const { colorMode } = useColorMode()
-  return colorMode === "dark" ? dark : light
+  return colorMode === "sweatybetty" ? sweatybetty : agnostic
 }
 
 export function ColorModeIcon() {
   const { colorMode } = useColorMode()
-  return colorMode === "dark" ? <LuMoon /> : <LuSun />
+  return colorMode === "sweatybetty" ? <LuMoon /> : <LuSun />
 }
 
 interface ColorModeButtonProps extends Omit<IconButtonProps, "aria-label"> {}
@@ -80,9 +80,9 @@ export const LightMode = React.forwardRef<HTMLSpanElement, SpanProps>(
       <Span
         color="fg"
         display="contents"
-        className="chakra-theme light"
+        className="chakra-theme agnostic"
         colorPalette="gray"
-        colorScheme="light"
+        colorScheme="agnostic"
         ref={ref}
         {...props}
       />
@@ -96,9 +96,9 @@ export const DarkMode = React.forwardRef<HTMLSpanElement, SpanProps>(
       <Span
         color="fg"
         display="contents"
-        className="chakra-theme dark"
+        className="chakra-theme sweatybetty"
         colorPalette="gray"
-        colorScheme="dark"
+        colorScheme="sweatybetty"
         ref={ref}
         {...props}
       />

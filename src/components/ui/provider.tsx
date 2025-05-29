@@ -6,23 +6,23 @@ import {
   type ColorModeProviderProps,
 } from "./color-mode"
 
-const config = defineConfig({
+const agnosticConfig = defineConfig({
   theme: {
     tokens: {
       colors: {
-        white: { value: "purple" },
-        black: { value: "--kx-typography-colors-button-primary-color" }
+        main: { value: "#30923" },
+        accent: { value: "#23003" }
       },
     },
     semanticTokens: {
       colors: {
-        "button-primary-bgcolor": {
-          value: { base: "white", _dark: "black" },
-          description: "The background color of the primary button",
+        primary: {
+          value: { colors: "main" },
+          description: "The background color of primary buttons",
         },
-        "button-primary-color": {
-          value: { base: "black", _dark: "white" },
-          description: "The text color of the primary button",
+        secondary: {
+          value: { colors: "accent" },
+          description: "The background color of secondary buttons",
         },
       },
     },

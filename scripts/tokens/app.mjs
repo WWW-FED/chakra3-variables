@@ -26,13 +26,13 @@ const COLLECTION_DATA = {
       colorSchemes: ["agnostic", "sweaty_betty"],
     },
   },
-  agnostic_brand_style_guide: {
+  agnosticPrimatives: {
     settings: {
-      prefix: "agnostic_brand_style_guide",
+      prefix: "agnostic_primatives",
       colorSchemes: ["agnostic"],
     },
   },
-  sb_style_guide: {
+  sbPrimatives: {
     settings: {
       prefix: "typography",
     },
